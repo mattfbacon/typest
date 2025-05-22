@@ -545,6 +545,6 @@ fn main() {
 		let text = &world.main.text()[span.clone()];
 		let line = world.main.byte_to_line(span.start).unwrap();
 		let column = world.main.byte_to_column(span.start).unwrap();
-		eprintln!("problem:\n  span: {line}:{column} (span:?) {text:?}\n  message: {message}");
+		eprintln!("problem:\n  span: {line}:{column} ({span:?}) {text:?}\n  message: {message}");
 	}
 }
